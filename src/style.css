@@ -90,8 +90,6 @@ li {
 .future-weather .col {
   text-align: center;
   padding: 0;
-  
-  
 }
 .card-title {
   font-size: 17px;
@@ -102,27 +100,24 @@ li {
   border: white;
 }
 
-.card .maxim{
-    font-size: 18px;
-    line-height: 1.5;
-    color: #c25df1;
-    font-weight: 700;
-    margin-right: 5px;
-    
+.card .maxim {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #c25df1;
+  font-weight: 700;
+  margin-right: 5px;
 }
 
-.card .minim{
-    font-size: 18px;
-    opacity: 0.6;
-    line-height: 1.5;
-    color: #c25df1;
-    font-weight: 700;
-    
+.card .minim {
+  font-size: 18px;
+  opacity: 0.6;
+  line-height: 1.5;
+  color: #c25df1;
+  font-weight: 700;
 }
-
 
 .card-img-top {
-    width: 50%;
+  width: 50%;
 }
 
 .footer {

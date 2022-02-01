@@ -78,8 +78,6 @@ function showFahrenheitTemperature(event) {
   fahrenheit.classList.add("active");
   fahrenheit.classList.remove("desactive");
   celsius.classList.add("desactive");
-  
-  
 }
 
 function showCelsiusTemperature(event) {
@@ -91,8 +89,6 @@ function showCelsiusTemperature(event) {
   celsius.classList.add("active");
   celsius.classList.remove("desactive");
   fahrenheit.classList.add("desactive");
-
-  
 }
 
 //------------------------------------------------------------------------------------------//
