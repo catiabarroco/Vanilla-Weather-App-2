@@ -44,6 +44,10 @@ li {
   margin-bottom: 20px;
 }
 
+.image {
+  width: 130px;
+}
+
 .city-name {
   font-weight: 900;
 }
@@ -61,10 +65,9 @@ li {
   text-decoration: none;
 }
 
-.description{
-    text-transform: capitalize;
+.description {
+  text-transform: capitalize;
 }
-
 
 .footer {
   font-size: small;
