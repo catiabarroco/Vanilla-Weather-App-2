@@ -2,9 +2,8 @@
 function showPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
-
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
-  console.log(url);
+
   axios.get(url).then(showTemperature);
 }
 
