@@ -32,6 +32,7 @@
                 id="search-city"
                 class="form-control"
                 placeholder="Type a city..."
+                autocomplete="off"
               />
             </div>
             <div class="col-3">
@@ -43,11 +44,13 @@
               />
             </div>
             <div class="col-3">
-              <input
-                type="submit"
-                value="Your Location"
-                class="btn btn-primary"
-              />
+              <button
+                class="btn btn-sucess btn-primary w-100"
+                id="current-location-button"
+                onclick="window.location.reload();"
+              >
+                Your Location
+              </button>
             </div>
           </div>
         </form>
@@ -55,16 +58,20 @@
         <!--- --------------------- Principal --------------------- --->
         <div class="row">
           <div class="col-6 position-relative">
-            <img src="" alt="" class="image position-absolute top-50 start-50 translate-middle">
+            <img
+              src=""
+              alt=""
+              class="image position-absolute top-50 start-50 translate-middle"
+            />
           </div>
           <div class="col-6">
             <h1 class="city-name">City</h1>
             <div class="temp-now">
-              <strong id="temperature">7</strong>
+              <strong id="temperature"></strong>
               <span class="units">
-                <a href="#">°C</a>
+                <a href="#" id="celsius-link" class="active">°C</a>
                 |
-                <a href="#">°F</a>
+                <a href="#" id="fahrenheit-link" class="desactive">°F</a>
               </span>
             </div>
             <ul>
@@ -73,13 +80,105 @@
                 <span class="description"></span>
               </li>
               <li>
-                Humidity: <span class="humidity"></span>% 
-                , Wind: <span class="wind"></span>km/h
+                Humidity: <span class="humidity"></span> , Wind:
+                <span class="wind"></span>
               </li>
             </ul>
           </div>
         </div>
+
+
+        <!--...............temp futuras.................-->
+        <div class="row future-weather">
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Friday</h5>
+                <img
+                  src="http://openweathermap.org/img/wn/03d@2x.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 11ºC </span>  
+                  <span class="minim"> 2ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Friday</h5>
+                <img
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 11ºC</span> 
+                  <span class="minim"> 2ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Friday</h5>
+                <img
+                  src="http://openweathermap.org/img/wn/02d@2x.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 11ºC</span> 
+                  <span class="minim"> 2ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Friday</h5>
+                <img
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 11ºC</span> 
+                  <span class="minim"> 2ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 8rem">
+              <div class="card-body">
+                <h5 class="card-title">Friday</h5>
+                <img
+                  src="http://openweathermap.org/img/wn/01d@2x.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text">
+                  <span class="maxim"> 11ºC</span>
+                  <span class="minim"> 2ºC</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
+
+
+      </div>
+
+      
       <div class="footer">
         This project was coded by
         <a href="https://github.com/catiabarroco" target="_black"
