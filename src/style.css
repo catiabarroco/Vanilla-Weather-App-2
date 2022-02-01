@@ -14,17 +14,18 @@ li {
   list-style: none;
   color: rgba(0, 0, 0, 0.5);
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 .weather-app {
   border: 1px solid rgba(22, 22, 22, 0.164);
   background-color: white;
   max-width: 800px;
-  margin: 30px auto;
+  margin: 30px auto 10px;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
@@ -49,10 +50,7 @@ li {
 
 #temperature {
   font-size: 80px;
-
 }
-
-
 
 .units {
   position: relative;
@@ -61,4 +59,20 @@ li {
 
 .units a {
   text-decoration: none;
+}
+
+.description{
+    text-transform: capitalize;
+}
+
+
+.footer {
+  font-size: small;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer a {
+  text-decoration: none;
+  color: #885df1;
 }
