@@ -1,11 +1,5 @@
 // SHOW POSITION AND TEMP
-function showPosition(position) {
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
 
-  axios.get(url).then(showTemperature);
-}
 
 //SHOW DATA OF TEMP
 function showTemperature(response) {
@@ -91,6 +85,13 @@ function showCelsiusTemperature(event) {
 }
 
 //------------------------------------------------------------------------------------------//
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
+
+  axios.get(url).then(showTemperature);
+}
 
 let celsiusTemperature = null;
 
