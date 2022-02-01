@@ -21,7 +21,79 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather App</h1>
+      <div class="weather-app">
+        <!--- --------------------- Search --------------------- --->
+        <form id="weather-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                id="search-city"
+                class="form-control"
+                placeholder="Type a city..."
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-primary w-100"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Your Location"
+                class="btn btn-primary"
+              />
+            </div>
+          </div>
+        </form>
+
+        <!--- --------------------- Principal --------------------- --->
+        <div class="row">
+          <div class="col-6">
+            <h1 class="img">IMG</h1>
+          </div>
+          <div class="col-6">
+            <h1 class="city-name">City</h1>
+            <div class="temp-now">
+              <strong id="temperature">7</strong>
+              <span class="units">
+                <a href="#">°C</a>
+                |
+                <a href="#">°F</a>
+              </span>
+            </div>
+            <ul>
+              <li>
+                <span class="date">Tuesday 12:00</span> ,
+                <span class="description">clear sky</span>
+              </li>
+              <li>
+                <span class="humidity">Humidity: 68%</span> ,
+                <span class="wind"> Wind: 0.48km/h</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        This project was coded by
+        <a href="https://github.com/catiabarroco" target="_black"
+          >Cátia Barroco (Catis Coding)</a
+        >
+        and is
+        <a
+          href="https://github.com/catiabarroco/Vanilla-Weather-App-2"
+          target="_black"
+          >open-sourced on GitHub</a
+        >
+        and hosted on
+        <a href="https://silly-mcnulty-0e89fc.netlify.app/" target="_black"
+          >Netlify</a
+        >
+      </div>
     </div>
   </body>
 </html>
