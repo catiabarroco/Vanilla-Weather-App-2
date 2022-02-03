@@ -71,30 +71,6 @@ function typeCity(event) {
   axios.get(url).then(showTemperature);
 }
 
-//CONVERT UNITS
-function showFahrenheitTemperature(event) {
-  event.preventDefault();
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-
-  celsius.classList.remove("active");
-  fahrenheit.classList.add("active");
-  fahrenheit.classList.remove("desactive");
-  celsius.classList.add("desactive");
-}
-
-function showCelsiusTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-
-  fahrenheit.classList.remove("active");
-  celsius.classList.add("active");
-  celsius.classList.remove("desactive");
-  fahrenheit.classList.add("desactive");
-}
-
 //SHOW FORECAST
 function showForecast(response) {
   let futureWeather = document.querySelector(".future-weather");
@@ -147,8 +123,7 @@ function forecastDate(dateForecast) {
 }
 
 //------------------------------------------------------------------------------------------//
-
-let celsiusTemperature = null;
+//------------------------------------------------------------------------------------------//
 
 let apiKey = "f746b85726e56b40371fefcb31800d33";
 navigator.geolocation.getCurrentPosition(showPosition);
@@ -158,9 +133,3 @@ searchCity.addEventListener("submit", typeCity);
 
 let currentPosition = document.querySelector("#weather-form");
 currentPosition.addEventListener("submit", showPosition);
-
-let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", showFahrenheitTemperature);
-
-let celsius = document.querySelector("#celsius-link");
-celsius.addEventListener("click", showCelsiusTemperature);

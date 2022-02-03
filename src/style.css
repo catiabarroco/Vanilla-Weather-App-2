@@ -29,15 +29,14 @@ li {
 }
 
 .btn-primary {
-  
   font-weight: bold;
   border: #c25df1;
 }
 
 .btn-primary:hover {
   background-color: white;
-  color:#0D6EFD;
-  border: 1px solid #0D6EFD;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
 }
 
 #weather-form {
@@ -65,22 +64,13 @@ li {
   text-decoration: none;
 }
 
-.active {
-  color: black;
-  cursor: default;
-}
-.active:hover {
-  color: black;
-}
-
 .description {
   text-transform: capitalize;
 }
 
 .humidity,
-.wind,
-.desactive {
-  color: #0D6EFD;
+.wind {
+  color: #0d6efd;
   font-weight: bold;
 }
 
@@ -97,13 +87,12 @@ li {
 
 .card {
   margin: 7px auto;
-  
 }
 
 .card .maxim {
   font-size: 18px;
   line-height: 1.5;
-  color: #0D6EFD;
+  color: #0d6efd;
   font-weight: 700;
   margin-right: 5px;
 }
@@ -112,7 +101,7 @@ li {
   font-size: 18px;
   opacity: 0.6;
   line-height: 1.5;
-  color: #0D6EFD;
+  color: #0d6efd;
   font-weight: 700;
 }
 
@@ -128,5 +117,5 @@ li {
 
 .footer a {
   text-decoration: none;
-  color: #0D6EFD;
+  color: #0d6efd;
 }
